@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="home_anko_ui" type="id">home anko ui</item>
+    <item name="viewpager_anko" type="id">viewpager anko</item>
+    <item name="list_fragment_anko" type="id">list fragment anko</item>
+    <item name="list_recycler_view_anko" type="id">list recycler view anko</item>
+    <item name="list_fragment_card_anko" type="id">list fragment card anko</item>
+    <item name="text_anko" type="id">text anko</item>
+    <item name="image_anko" type="id">image anko</item>
+    <item name="profile_circle_image_viewholder" type="id">image viewholder</item>
+    <item name="profile_text_viewholder" type="id">profile text viewholder</item>
+    <item name="shadow_view_anko_viewholder" type="id">shadow view anko</item>
+</resources>
