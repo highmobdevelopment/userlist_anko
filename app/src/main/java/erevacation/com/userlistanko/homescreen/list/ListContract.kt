@@ -8,6 +8,6 @@ interface ListContract {
 
     }
     interface ListPresenter : ViperContract.Presenter {
-
+        fun onContactClick(name: String, surname: String, image: String, profileInfoList: ArrayList<String>)
     }
 }

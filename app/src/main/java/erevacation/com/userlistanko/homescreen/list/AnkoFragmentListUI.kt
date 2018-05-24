@@ -13,7 +13,7 @@ import org.jetbrains.anko.constraint.layout.constraintLayout
 import org.jetbrains.anko.recyclerview.v7.recyclerView
 
 class AnkoFragmentListUI : AnkoComponent<ListFragment> {
-    var recyclerViewList: RecyclerView? = null
+    lateinit var recyclerViewList: RecyclerView
     lateinit var text: TextView
     lateinit var image: ImageView
     override fun createView(ui: AnkoContext<ListFragment>): View = with(ui) {
@@ -25,9 +25,10 @@ class AnkoFragmentListUI : AnkoComponent<ListFragment> {
                 recyclerViewList = recyclerView {
                     id = R.id.list_recycler_view_anko
                     layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-                    backgroundColor = Color.RED
+                backgroundColor = Color.WHITE
+                    isFocusableInTouchMode = true
 
-                }.lparams(width = 0, height = 0) {
+                }.lparams(width = dip(0), height = dip(0)) {
                         topToTop = PARENT_ID
                         leftToLeft = PARENT_ID
                         rightToRight = PARENT_ID
