@@ -31,6 +31,7 @@ class ListFragmentPresenter @Inject constructor(val listUC: ListUC) : ListContra
     }
 
     override fun viewDetach() {
+        listUC.clearRequests()
         this.view = null
     }
 

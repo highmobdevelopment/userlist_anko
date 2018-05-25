@@ -28,7 +28,7 @@ class ListUC @Inject constructor(val listDManager: ListDataManager) : ListUCCont
                 .subscribe({ res ->
                     listUCOut?.publishListResults(res)
                 }, { e ->
-                    //LoggerManager.e(TAG, "Get request list error", e)
+
                 }))
     }
 
