@@ -14,12 +14,13 @@ import org.jetbrains.anko.support.v4.viewPager
 
 class AnkoHomeUI : AnkoComponent<HomeActivity> {
 
-    var viewPager: ViewPager? = null
+    lateinit var viewPager: ViewPager
     override fun createView(ui: AnkoContext<HomeActivity>) = with(ui) {
 
         frameLayout {
             id = R.id.home_anko_ui
             constraintLayout {
+                id = R.id.container
                 coordinatorLayout {
                     viewPager = viewPager {
                         id = R.id.viewpager_anko

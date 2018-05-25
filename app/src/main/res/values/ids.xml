@@ -10,4 +10,17 @@
     <item name="profile_circle_image_viewholder" type="id">image viewholder</item>
     <item name="profile_text_viewholder" type="id">profile text viewholder</item>
     <item name="shadow_view_anko_viewholder" type="id">shadow view anko</item>
+    <item name="item_icon" type="id">item icon</item>
+    <item name="item_name" type="id">item name</item>
+    <item name="item_details" type="id">item details</item>
+    <item name="profile_underline" type="id">profile underline</item>
+    <item name="shadow_view_details" type="id">shadow view details</item>
+    <item name="profile_fragment_anko" type="id">profile fragment anko</item>
+    <item name="profile_recycler_view_anko" type="id">profile recycle view anko</item>
+    <item name="profile_background" type="id">profile background</item>
+    <item name="profile_image" type="id">profile image</item>
+    <item name="profile_full_name" type="id">profile full name</item>
+    <item name="list_card" type="id">list card</item>
+    <item name="container" type="id">container</item>
+    <item name="recycler_container" type="id">recycler container</item>
 </resources>

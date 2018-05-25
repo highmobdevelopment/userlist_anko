@@ -41,6 +41,6 @@ class HomeActivityPresenter @Inject constructor() : HomeContract.HomePresenter {
 
     private fun setupViewPager() {
         adapter?.addFragment(listFragment)
-        (view as HomeActivity).ankoHomeUI.viewPager?.adapter = adapter
+        (view as HomeActivity).ankoHomeUI.viewPager.adapter = adapter
     }
 }

@@ -18,7 +18,6 @@ class HomeActivity : BasicActivity<HomeContract.HomePresenter>(), HomeContract.H
 
     override fun onBackPressed() {
         super.onBackPressed()
-
     }
 
 }
