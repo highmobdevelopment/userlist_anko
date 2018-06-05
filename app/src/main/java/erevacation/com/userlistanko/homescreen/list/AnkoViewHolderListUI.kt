@@ -53,7 +53,7 @@ class AnkoViewHolderListUI : AnkoComponent<ViewGroup> {
                         id = R.id.shadow_view_anko_viewholder
                         backgroundColor = Color.LTGRAY
 
-                    }.lparams(width = wrapContent, height = dip(R.dimen.line)) {
+                    }.lparams(width = wrapContent, height = dip(0.5f)) {
                         bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID
                         startToEnd = R.id.profile_circle_image_viewholder
                     }
