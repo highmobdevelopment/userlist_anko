@@ -2,6 +2,7 @@ package erevacation.com.userlistanko.homescreen.list
 
 import android.support.constraint.ConstraintLayout
 import android.support.v7.widget.RecyclerView
+import android.util.TimingLogger
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -19,7 +20,10 @@ class ListRecyclerAdapter(val presenter: ListFragmentPresenter) : RecyclerView.A
     private val profileInfoList: ArrayList<String> = arrayListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder? {
+        val timings = TimingLogger(ListRecyclerAdapter::class.java.simpleName, "onCreateViewHolder")
         val itemView = AnkoViewHolderListUI().createView(AnkoContext.create(parent.context, parent))
+        timings.addSplit("onCreateViewHolder done")
+        timings.dumpToLog()
         return ListViewHolder(itemView)
     }
 
